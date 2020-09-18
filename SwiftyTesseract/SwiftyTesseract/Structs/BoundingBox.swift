@@ -16,8 +16,8 @@ struct BoundingBox {
 
   var cgRect: CGRect {
     return CGRect(
-      x: .init(originX),
-      y: .init(originY),
+      x: .init(Int(originX)),
+      y: .init(Int(originY)),
       width: .init(widthOffset - originX),
       height: .init(heightOffset - originY)
     )
